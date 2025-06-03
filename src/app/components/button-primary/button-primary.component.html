@@ -1,0 +1,12 @@
+<button 
+   (click)="submit()"
+   [class]="'button ' + variant"
+   [disabled]="disabled"   
+>
+   <span *ngIf="!loading">
+      {{ buttonText }}
+   </span>
+   <span *ngIf="loading">
+      carregando...
+   </span>
+</button>
