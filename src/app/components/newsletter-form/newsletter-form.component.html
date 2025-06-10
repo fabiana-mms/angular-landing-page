@@ -13,6 +13,7 @@
          variant="secondary"
          (submit)="onSubmit()"
          [disabled]="!newsletterForm.valid"
+         [loading]="loading()"
       ></app-button-primary>
    </form>
 </section>
